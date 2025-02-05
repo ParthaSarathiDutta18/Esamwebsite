@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+    background-color: #173a8b;
+    transition: 0.5s all;
+            font-family: 'Poppins', sans-serif;
+        }
+       
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #0d214e;
+            margin-bottom: 20px;
+        }
+        nav h1{
+            color: whitesmoke;
+            
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: lavender;
+        }
+        main hr{
+            border: 0;
+        background: lavender;
+        height: 1px;
+        margin: 0px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 0px 0;
+            color: whitesmoke;
+
+        }
+        .firstsection > div{
+            width: 30%;
+        }
+        .secondSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 0px 0;
+            color: blanchedalmond;
+
+        }
+        .secondSection > div{
+            width: 30%;
+        }
+        .leftsection{
+            
+            font-size: larger;
+            margin: 30px 0;
+            
+        }
+        .rightsection{
+            font-size: large;
+            margin: 10px;
+        }
+        
+            
+        
+        
+        .bioimg {
+    position: relative;
+    width: 800px;
+}
+
+.bioimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all .3s ease 0s;
+}
+
+.bioimg::before {
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    height: 500px;
+    width: 500px;
+    background: url('../svg/shadow-blue-round.svg') no-repeat 50%;
+    background-size: contain;
+    z-index: 1;
+}
+.studyimage img {
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+    transition: all .3s ease 0s;
+}
+
+.studyimage::before {
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    height: 500px;
+    width: 500px;
+    background: url('../svg2/shadow-blue-round.svg') no-repeat 50%;
+    background-size: contain;
+    z-index: 1;
+}
+
+.pattern-1 {
+    position: absolute;
+    top: 33%;
+    left: -17%;
+}
+
+.pattern-1 img {
+    animation: animationFramesOne 20s linear infinite alternate;
+}
+
+@keyframes animationFramesOne {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+
+    40% {
+        transform: translate(141px, 72px) rotate(72deg);
+    }
+
+    60% {
+        transform: translate(83px, 122px) rotate(108deg);
+    }
+
+    80% {
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+
+    100% {
+        transform: translate(0) rotate(0deg);
+    }
+}
+
+.pattern-2 {
+    position: absolute;
+    top: 18%;
+    right: 2%;
+    animation: hero-thumb-animation 2s linear infinite alternate;
+}
+
+.pattern-2 img {
+    animation: rotateMe 10s linear infinite alternate;
+}
+
+@keyframes hero-thumb-animation {
+    0% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotateMe {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.pattern-3 {
+    position: absolute;
+    bottom: 25%;
+    left: -19%;
+    animation: animationFramesOne 15s linear infinite alternate;
+}
+
+.pattern-4 {
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
+    animation: animationFramesOne 10s linear infinite alternate;
+}
+        .purple{
+            color: rgb(190, 179, 223);
+            margin-right: 100px;
+        }
+        
+        .createdby h4 {
+    color: #fcfdfd;
+    font-weight: 500;
+    margin-left: 80px;
+    margin-top: 30px;
+
+}
+
+.createdby h4 a {
+    color: #0ea5ea;
+}
+
+.createdby h4 a:hover {
+    color: #0bd1d1;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><h1>Wannabe</h1></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Education</a></li>
+                    <li><a href="/">Interests</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <span class="Heading"><h1>Tech</h1></span> 
+                <p>I'm always eager to explore the ever-evolving world of technology. From coding to discovering new innovations, I’m deeply driven by the endless possibilities that tech offers. The thrill of solving problems and creating new solutions keeps me constantly learning and adapting, and I’m excited to be part of a field that’s always pushing boundaries and shaping the future.</p>
+            </div>
+            <div class="bioimg">
+                <img src="photographer.png" alt="">
+                <div class="pattern-1"><img src="svg/pattern-1.svg" alt=""></div>
+                <div class="pattern-2"><img src="svg/pattern-2.svg" alt=""></div>
+                <div class="pattern-3"><img src="svg/pattern-3.svg" alt=""></div>
+                <div class="pattern-4"><img src="svg/pattern-4.svg" alt=""></div>
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <div class="studyimage">
+                <img src="music 2.png" alt="">
+            </div>
+        <div class="rightsection"><h1>Music</h1>
+        <p>Music is my ultimate source of inspiration and creativity. It’s not just about melodies and rhythms, but the emotions and stories they convey. Whether it’s the mind-bending, experimental sounds of Pink Floyd, the revolutionary vibes of The Beatles, the raw intensity of Nirvana’s grunge anthems, or the poetic depth of Bob Dylan’s lyrics, each artist brings something unique that fuels my love for music. From the introspective, philosophical themes of Pink Floyd to the rebellious spirit of Nirvana, and the timeless, socially-conscious messages of Dylan and The Beatles, their music has shaped my view of the world and continues to inspire me every day.</p>    </div>
+    </section>
+    <hr>
+    <section class="secondSection">
+        
+    <div class="rightsection"><h1>Poetry</h1>
+    <p>Poetry is where language becomes a canvas, and every word paints an emotion, a moment, or a story. It's the art of expressing the inexpressible, whether through a rhythmic verse, a quiet haiku, or a deep, sprawling metaphor. Like the lyrics of a song, poetry captures the raw essence of the human experience, inviting us to feel, think, and reflect in ways that go beyond the ordinary. From the delicate beauty of love to the complexities of pain and joy, poetry allows us to explore the world with a fresh perspective, making it a powerful, personal form of creative expression.</p>    </div>
+<div class="studyimage">
+            <img src="poetry.png" alt="">
+        </div>
+    </section>
+<hr>
+    <div class="createdby">
+        <h4>&copy; 2025 Created by Esambro.
+                </h4>
+    </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>a Tech Enthusiast</i>.', ' <i>a Wannabe Coder</i>.', ' <i>a Musician by Heart.</i>', ' <i>and I Wannabe Much More.</i>'],
+          typeSpeed: 50,
+        });
+      </script>
+      <script src="app.js"></script>
+    </body>
+</body>
+</html>
